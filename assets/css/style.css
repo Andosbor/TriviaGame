@@ -1,0 +1,25 @@
+.container{
+    
+    background-color: #ffe398;
+    height: 800px;
+}
+body{
+    margin: 0;
+    background: url('../images/burgers3.jpg');
+    background-size: 1440px 800px;
+    
+    display: compact;
+}
+.title{
+    color:#0033c0;
+    text-align: center;
+    font-size: 70px;
+    font-family: "Georgia";
+    padding: 30px;
+}
+h2{
+    text-align:center;
+}
+p{
+    text-align: center;
+}
