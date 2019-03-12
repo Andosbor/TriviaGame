@@ -7,125 +7,11 @@
 
 //use z index to hide quiz and results pages
 function createQuiz(questions, quizContainer, resultsContainer,submitButton){
-    function showQuestions(questions, quizContainer){
-
-    }
-    function showResults(questions,quizContainer,resultsContainer){
-
-    }
-    showQuestions(questions,quizContainer);
-
-    submitButton.onClick = function(){
-        showResults(questions,quizContainer,resultsContainer);
-    }
-}
-var myQuestions = [
-	{
-		question: "What fast food restaurant is credited with introducing the first modern-day drive-thru window?",
-		answers: {
-			a: 'Wendy\'s',
-			b: 'Burger King',
-            c: 'Sonic',
-            d: 'McDonald\'s'
-		},
-		correctAnswer: 'a'
-	},
-	{
-		question: "Which of the following fast food restaurants was founded first?",
-		answers: {
-			a: 'Burger King',
-			b: 'In-N-Out Burger',
-            c: 'Whataburger',
-            d: 'McDonald\'s',
-		},
-		correctAnswer: 'b'
-    }
-    {
-		question: "What did McDonald's restaurants first introduce in 1968?",
-		answers: {
-			a: 'Big Mac',
-			b: 'Ronald McDonald',
-            c: 'Egg McMuffin',
-            d: 'Happy Meal',
-		},
-		correctAnswer: 'a'
-    }
-    {
-		question: "What fast food restaurant boasts that you can \"Have it your way\"?",
-		answers: {
-			a: 'Papa John\'s',
-			b: 'El Pollo Loco',
-            c: 'Burger King',
-            d: 'Subway',
-		},
-		correctAnswer: 'c'
-    }
-    {
-		question: "How many herbs and spices make up the secret blend used on Colonel Harland Sanders' most famous creation: his Original KFC Recipe?",
-		answers: {
-			a: '13',
-			b: '9',
-            c: '11',
-            d: '7',
-		},
-		correctAnswer: 'c'
-    }
-    {
-		question: "What fast food restaurant calls itself \"The Last Great Hamburger Stand\"?",
-		answers: {
-			a: 'Five Guys Famous Burgers and Fries',
-			b: 'Shake Shack',
-            c: 'Sonic Drive-in',
-            d: 'Fatburger,
-		},
-		correctAnswer: 'd'
-    }
-    {
-		question: "What taco shop's menu features items such as \"The Democrat\", \"The Republican\", and \"The Independent\"?",
-		answers: {
-			a: 'Chronic Tacos',
-			b: 'Fuzzy\'s Tacos',
-            c: 'Torchy\'s Tacos',
-            d: 'Velvet Tacos',
-		},
-		correctAnswer: 'c'
-    }
-    {
-		question: "What was the first fast food restaurant in China?",
-		answers: {
-			a: 'Panda Express',
-			b: 'Pizza Hut',
-            c: 'McDonald\'s',
-            d: 'KFC',
-		},
-		correctAnswer: 'd'
-    }
-    {
-		question: "The Famous Star is the signature burger of what fast food restaurant?",
-		answers: {
-			a: 'Carl\'s JR',
-			b: 'Shake Shack',
-            c: 'Burger Street',
-            d: 'Dairy Queen',
-		},
-		correctAnswer: 'a'
-    }
-    {
-		question: "What was the first fast food restaurant to offer a complete \"lite\" menu?",
-		answers: {
-			a: 'Krispy Kreme',
-			b: 'Subway',
-            c: 'Arby\'s',
-            d: 'Taco Bell',
-		},
-		correctAnswer: 'c'
-    }
-];
-function showQuestions(questions, quizContainer){
+	function showQuestions(questions, quizContainer){
     var output = [];
     var answers;
 
-    for (var i=0; i<questions.length; i++){
+    for (var i = 0; i < questions.length; i++){
         answers = [];
 
         for(letter in questions[i].answers){
@@ -146,8 +32,6 @@ function showQuestions(questions, quizContainer){
 
     quizContainer.innerHTML = output.join('');
 }
-showQuestions(questions, quizContainer);
-
 function showResults(questions, quizContainer, resultsContainer){
 	
 	// gather answer containers from our quiz
@@ -181,6 +65,118 @@ function showResults(questions, quizContainer, resultsContainer){
 	// show number of correct answers out of total
 	resultsContainer.innerHTML = numCorrect + ' out of ' + questions.length;
 }
+    showQuestions(questions,quizContainer);
+
+    submitButton.onClick = function(){
+        showResults(questions,quizContainer,resultsContainer);
+    }
+}
+var myQuestions = [
+	{
+		question: "What fast food restaurant is credited with introducing the first modern-day drive-thru window?",
+		answers: {
+			a: 'Wendy\'s',
+			b: 'Burger King',
+            c: 'Sonic',
+            d: 'McDonald\'s',
+		},
+		correctAnswer: 'a'
+	},
+	{
+		question: "Which of the following fast food restaurants was founded first?",
+		answers: {
+			a: 'Burger King',
+			b: 'In-N-Out Burger',
+            c: 'Whataburger',
+            d: 'McDonald\'s',
+		},
+		correctAnswer: 'b'
+    },
+    {
+		question: "What did McDonald's restaurants first introduce in 1968?",
+		answers: {
+			a: 'Big Mac',
+			b: 'Ronald McDonald',
+            c: 'Egg McMuffin',
+            d: 'Happy Meal',
+		},
+		correctAnswer: 'a'
+    },
+    {
+		question: "What fast food restaurant boasts that you can \"Have it your way\"?",
+		answers: {
+			a: 'Papa John\'s',
+			b: 'El Pollo Loco',
+            c: 'Burger King',
+            d: 'Subway',
+		},
+		correctAnswer: 'c'
+    },
+    {
+		question: "How many herbs and spices make up the secret blend used on Colonel Harland Sanders' most famous creation: his Original KFC Recipe?",
+		answers: {
+			a: '13',
+			b: '9',
+            c: '11',
+            d: '7',
+		},
+		correctAnswer: 'c'
+    },
+    {
+		question: "What fast food restaurant calls itself \"The Last Great Hamburger Stand\"?",
+		answers: {
+			a: 'Five Guys Famous Burgers and Fries',
+			b: 'Shake Shack',
+            c: 'Sonic Drive-in',
+            d: 'Fatburger',
+		},
+		correctAnswer: 'd'
+    },
+    {
+		question: "What taco shop's menu features items such as \"The Democrat\", \"The Republican\", and \"The Independent\"?",
+		answers: {
+			a: 'Chronic Tacos',
+			b: 'Fuzzy\'s Tacos',
+            c: 'Torchy\'s Tacos',
+            d: 'Velvet Tacos',
+		},
+		correctAnswer: 'c'
+    },
+    {
+		question: "What was the first fast food restaurant in China?",
+		answers: {
+			a: 'Panda Express',
+			b: 'Pizza Hut',
+            c: 'McDonald\'s',
+            d: 'KFC',
+		},
+		correctAnswer: 'd'
+    },
+    {
+		question: "The Famous Star is the signature burger of what fast food restaurant?",
+		answers: {
+			a: 'Carl\'s JR',
+			b: 'Shake Shack',
+            c: 'Burger Street',
+            d: 'Dairy Queen',
+		},
+		correctAnswer: 'a'
+    },
+    {
+		question: "What was the first fast food restaurant to offer a complete \"lite\" menu?",
+		answers: {
+			a: 'Krispy Kreme',
+			b: 'Subway',
+            c: 'Arby\'s',
+            d: 'Taco Bell',
+		},
+		correctAnswer: 'c'
+    }
+];
+
+showQuestions(questions, quizContainer);
+
+
 submitButton.onclick = function(){
 	showResults(questions, quizContainer, resultsContainer);
 }
