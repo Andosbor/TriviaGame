@@ -8,34 +8,159 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+    <script src="assets/javascript/app.js"></script>
 </head>
 <body>
     <div class = "container">
-        <div id="quiz">
             <div class = "row">
                 <div class = "col-md-12">
-                    <h1 class = "title">Totally Trivial Trivia!</h1>
+                    <h1 class = "title">Fast Food Quiz!</h1>
                     <hr>
                 </div>
             </div>
+            <div id = "startQuiz">
+                    <button id="start" type = "button" onclick = "startQuiz();">Begin</button>
+                </div>
+        <div id="quiz">
             <div class = "row">
                 <div class = "col-md-12">
                     <h2>Time Remaining: <p class = "timer">30 seconds</p></h2>
                     <hr>
                 </div>
             </div>
-            <div class = "row">
-                <div class = "col-md-12">
-                    <h2>What's the coldest food in the world?</h2><br>
-                    <p>a hambrrrrrrrrrgur</p>
+            <form id = "questions" name = "quiz">
+                <div class = "row">
+                    <div class = "col-md-12">
+                        <h5>What fast food restaurant is credited with introducing the first modern-day drive-thru window?</h2>
+                        <input type = "radio" id = "mc" name = "question1" value = "Wendy's"> Wendy's
+                        <input type = "radio" id = "mc" name = "question1" value = "Burger King"> Burger King
+                        <input type = "radio" id = "mc" name = "question1" value = "Sonic">Sonic
+                        <input type = "radio" id = "mc" name = "question1" value = "McDonald's"> McDonald's
+
+                        <br><br>
+                    </div>
                 </div>
-            </div>
+                 <div class = "row">
+                    <div class = "col-md-12">
+                        <h5>Which of the following fast food restaurants was founded first?</h2>
+                        <input type = "radio" id = "mc" name = "question2" value = "Burger King"> Burger King
+                        <input type = "radio" id = "mc" name = "question2" value = "In-N-Out Burger"> In-N-Out Burger
+                        <input type = "radio" id = "mc" name = "question2" value = "Whataburger"> Whataburger
+                        <input type = "radio" id = "mc" name = "question2" value = "McDonald's"> McDonald's
+
+                        <br><br>
+                    </div>
+                </div>
+                 <div class = "row">
+                    <div class = "col-md-12">
+                        <h5>What did McDonald's restaurants first introduce in 1968?</h2>
+                        <input type = "radio" id = "mc" name = "question3" value = "Big Mac"> Big Mac
+                        <input type = "radio" id = "mc" name = "question3" value = "Ronald McDonald"> Ronald McDonald
+                        <input type = "radio" id = "mc" name = "question3" value = "Egg McMuffin">Egg McMuffin
+                        <input type = "radio" id = "mc" name = "question3" value = "Happy Meal"> Happy Meal
+
+                        <br><br>
+                    </div>
+                </div>
+                 <div class = "row">
+                    <div class = "col-md-12">
+                        <h5>What fast food restaurant boasts that you can "Have it your way"?</h2>
+                        <input type = "radio" id = "mc" name = "question4" value = "Papa John's"> Papa John's
+                        <input type = "radio" id = "mc" name = "question4" value = "El Pollo Loco"> El Pollo Loco
+                        <input type = "radio" id = "mc" name = "question4" value = "Burger King">Burger King
+                        <input type = "radio" id = "mc" name = "question4" value = "Subway"> Subway
+
+                        <br><br>
+                    </div>
+                </div>
+                 <div class = "row">
+                    <div class = "col-md-12">
+                        <h5>How many herbs and spices make up the secret blend used on Colonel Harland Sanders' most famous creation: his Original KFC Recipe?</h2>
+                        <input type = "radio" id = "mc" name = "question5" value = "13"> 13
+                        <input type = "radio" id = "mc" name = "question5" value = "9"> 9
+                        <input type = "radio" id = "mc" name = "question5" value = "11">11
+                        <input type = "radio" id = "mc" name = "question5" value = "7"> 7
+
+                        <br><br>
+                    </div>
+                </div>
+                 <div class = "row">
+                    <div class = "col-md-12">
+                        <h5>What fast food restaurant calls itself "The Last Great Hamburger Stand"?</h2>
+                        <input type = "radio" id = "mc" name = "question6" value = "Five Guys Famous Burgers and Fries"> Five Guys Famous Burgers and Fries
+                        <input type = "radio" id = "mc" name = "question6" value = "Shake Shack"> Shake Shack
+                        <input type = "radio" id = "mc" name = "question6" value = "Sonic Drive-in">Sonic Drive-in
+                        <input type = "radio" id = "mc" name = "question6" value = "Fatburger"> Fatburger
+
+                        <br><br>
+                    </div>
+                </div>
+                 <div class = "row">
+                    <div class = "col-md-12">
+                        <h5>What taco shop's menu features items such as "The Democrat", "The Republican", and "The Independent"?</h2>
+                        <input type = "radio" id = "mc" name = "question7" value = "Chronic Tacos"> Chronic Tacos
+                        <input type = "radio" id = "mc" name = "question7" value = "Fuzzy's Tacos"> Fuzzy's Tacos
+                        <input type = "radio" id = "mc" name = "question7" value = "Torchy's Tacos">Torchy's Tacos
+                        <input type = "radio" id = "mc" name = "question7" value = "Velvet Tacos"> Velvet Tacos
+
+                        <br><br>
+                    </div>
+                </div>
+                 <div class = "row">
+                    <div class = "col-md-12">
+                        <h5>What was the first fast food restaurant in China?</h2>
+                        <input type = "radio" id = "mc" name = "question8" value = "Panda Express"> Panda Express
+                        <input type = "radio" id = "mc" name = "question8" value = "Pizza Hut"> Pizza Hut
+                        <input type = "radio" id = "mc" name = "question8" value = "McDonald's">McDonald's
+                        <input type = "radio" id = "mc" name = "question8" value = "KFC"> KFC
+
+                        <br><br>
+                    </div>
+                </div>
+                 <div class = "row">
+                    <div class = "col-md-12">
+                        <h5>The Famous Star is the signature burger of what fast food restaurant?</h2>
+                        <input type = "radio" id = "mc" name = "question9" value = "Carl's JR"> Carl's JR
+                        <input type = "radio" id = "mc" name = "question9" value = "Shake Shack"> Shake Shack
+                        <input type = "radio" id = "mc" name = "question9" value = "Burger Street">Burger Street
+                        <input type = "radio" id = "mc" name = "question9" value = "Dairy Queen"> Dairy Queen
+
+                        <br><br>
+                    </div>
+                </div>
+                 <div class = "row">
+                    <div class = "col-md-12">
+                        <h5>What was the first fast food restaurant to offer a complete "lite" menu?</h2>
+                        <input type = "radio" id = "mc" name = "question10" value = "Krispy Kreme"> Krispy Kreme
+                        <input type = "radio" id = "mc" name = "question10" value = "Subway"> Subway
+                        <input type = "radio" id = "mc" name = "question10" value = "Arby's">Arby's
+                        <input type = "radio" id = "mc" name = "question10" value = "Taco Bell"> Taco Bell
+
+                        <br><br>
+                    </div>
+                </div>
             
         </div>
-        <button id="submit">Get Results</button>
-        <div id="results"></div>
+        <div class = "row">
+            <div class = "col-md-12">
+                <button id="submit" type = "button" onclick = "check();">Get Results</button>        
+            
+            </div>
+        </div>
+        
+        <div class = "row">
+                <div class = "col-md-12">
+                    <div id = "after_submit">
+                        <!--number correct is hiding it-->
+                        <p id ="number_correct"></p>
+                        <p id ="number_wrong"></p>
+                    </div>
+                </div>
+        </div>
+    </form>
+    </div>
         
 
-    </div>
+    
 </body>
 </html>

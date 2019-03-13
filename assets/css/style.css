@@ -1,7 +1,8 @@
 .container{
     
     background-color: #ffe398;
-    height: 800px;
+    
+    
 }
 body{
     margin: 0;
@@ -23,7 +24,22 @@ h2{
 p{
     text-align: center;
 }
-button{
-    margin-left: 47%;
-    margin-right: auto;
+#number_correct {
+    visibility: hidden;
+    
+}
+.row{
+    text-align: center;
+}
+#quiz{
+    visibility: hidden;
+}
+#start{
+    margin-left: 40%;
+    width:250px;
+    height:80px;
+}
+#submit{
+    visibility: hidden;
+    margin-bottom: 10px;
 }
